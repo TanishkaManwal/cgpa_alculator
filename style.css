@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: burlywood;
+}
+
+.container {
+    width: 50%;
+    margin: 100px;
+    margin-left:350px;
+    background: burlywood;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: solid #362c02;
+    
+}
+
+.subject-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+}

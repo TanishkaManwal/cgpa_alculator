@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                    <th>Credits</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="subjectTable">
+                <tr>
+                    <td><input type="text" class="subject" placeholder="Subject"></td>
+                    <td><input type="number" class="grade" placeholder="Grade (0-10)" min="0" max="10"></td>
+                    <td><input type="number" class="credit" placeholder="Credits" min="1"></td>
+                    <td><button onclick="removeRow(this)">❌</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="addRow()">➕ Add Subject</button>
+        <button onclick="calculateCGPA()">Calculate CGPA</button>
+        <h2 id="result">Your CGPA: --</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
